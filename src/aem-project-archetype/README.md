@@ -56,3 +56,10 @@ There are three levels of testing contained in the project:
 The project comes with the auto-public repository configured. To setup the repository in your Maven settings, refer to:
 
     http://helpx.adobe.com/experience-manager/kb/SetUpTheAdobeMavenRepository.html
+
+## Daniel's Updates
+
+On Windows, I had to wrap the command to generate this project like this:
+```
+mvn archetype:generate "-DarchetypeGroupId=com.adobe.granite.archetypes" "-DarchetypeArtifactId=aem-project-archetype" "-DarchetypeVersion=18" -X
+```
